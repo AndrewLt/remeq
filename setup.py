@@ -7,18 +7,21 @@ setup(
     name="remeq",
     version="1.0.0",
     description="A simple library for creating message queue based on Redis and its channels",
-    package_dir={"": "remeq"},
-    packages=find_packages(where="remeq"),
+    packages=find_packages(),
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="",
+    url="https://github.com/AndrewLt/remeq",
     author="AndrewLt",
     license="MIT",
     classifiers=[
         "License :: OSI Approved :: MIT License",
-        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.9",
         "Operating System :: OS Independent",
     ],
-    install_requires=["redis >= 5.0.1", "hiredis >= 2.3.2"],
-    python_requires=">=3.11",
+    keywords=['redis', 'queue', 'message'],
+    install_requires=[
+        "redis>=5.0.0",
+        "hiredis"
+    ],
+    python_requires=">=3.9",
 )
