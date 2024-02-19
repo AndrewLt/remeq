@@ -1,12 +1,12 @@
 # REMEQ
-It is a simple library for creating message queue based on Redis and its channels
+It is a simple library for creating a message queue based on Redis and its channels
 
 # How can I use it?
 First of all import MessageQueue object into your code.
 ```python
 from remeq import MessageQueue
 ```
-and create new queue
+and create a new queue
 ```python
 redis_message_queue = MessageQueue(
     queue_name='YOUR_CHANNEL_NAME',
